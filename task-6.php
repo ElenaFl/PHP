@@ -9,7 +9,6 @@ do {
  $response = +readline("Введите ответ: ");
 } while ($response !== 1 && $response !== 2 && $response !== 3);
 
-$res = ($response === 1 || $response === 2) ?   "Не верно!\n" : 
-"Поздравляю, правильный ответ!\n";
+$res = ($response === 3) ? "Поздравляю, правильный ответ!\n" : "Не верно!\n";
 
 echo $res;
