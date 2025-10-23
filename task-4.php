@@ -1,22 +1,25 @@
 <?php 
-$n = 10;
+$n = 1;
 
 switch($n) {  
-    case 10 :
+    case 1 :
         echo "$n\n";
         $n++;
-    case 11 :
+    case 2 :
         echo "$n\n";
         $n++;
-    case 12 :
+    case 3 :
         echo "$n\n";
         $n++;
-    case 13 :
+    case 4 :
         echo "$n\n";
         $n++;
-    case 14 :
+    case 5 :
         echo "$n\n";
-        $n++;
-    case 15 :
-        echo "$n\n";
+        $n++;    
+    default:
+        do {
+            echo "$n\n";
+            $n++;
+        } while ($n <= 15);
 }
