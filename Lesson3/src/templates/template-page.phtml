@@ -1,0 +1,25 @@
+<?php
+$fileNames = [
+    'Главная' => '/',
+    'Задание 1' => '/pages/page1.php',
+    'Задание 2' => '/pages/page2.php',
+    'Задание 3' => '/pages/page3.php',
+    'Задание 4' => '/pages/page4.php',
+];
+include_once __DIR__ . '/../components/menu.phtml';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Урок 3.Задание <?=$data['id']?>.</title>
+</head>
+<body class="body">
+    <div class="content"><b><mark>Задача <?=$data['id']?>.</mark></b>
+        <?=$data['text']?><br><br><b>Ответ:</b><br><br>
+        <pre><?=$string?></pre>
+    </div>
+</body>
+</html>
