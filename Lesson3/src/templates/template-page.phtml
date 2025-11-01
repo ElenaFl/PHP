@@ -6,7 +6,7 @@ $fileNames = [
     'Задание 3' => '/pages/page3.php',
     'Задание 4' => '/pages/page4.php',
 ];
-include_once __DIR__ . '/../components/menu.phtml';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +17,8 @@ include_once __DIR__ . '/../components/menu.phtml';
     <title>Урок 3.Задание <?=$data['id']?>.</title>
 </head>
 <body class="body">
+    <h1>Урок 3</h1>
+    <?php include_once __DIR__ . '/../components/menu.phtml';?>
     <div class="content"><b><mark>Задача <?=$data['id']?>.</mark></b>
         <?=$data['text']?><br><br><b>Ответ:</b><br><br>
         <pre><?=$string?></pre>
